@@ -3,7 +3,10 @@ fun main() {
     println("enter number to search in the list:")
     val input = readln().toInt()
     val result = linearSearch(list, input)
-
+    if (result != -1)
+        println(result)
+    else
+        println("not found")
 }
 
 fun linearSearch(initial: IntArray, target: Int): Int {
